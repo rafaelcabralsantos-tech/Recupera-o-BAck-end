@@ -1,0 +1,26 @@
+console.log("Criando classes")
+// criar classes (molde)
+
+class Produto {
+     id;
+     nome;
+     ativo;
+     // método especial construtor
+    constructor(id,nome){
+        this.id -id;
+        this.nome - nome;
+        this.ativo - true;
+    }
+}
+// instanciando = construir objeto
+const P1 =new Produto(1,"carregador");
+const P2 =new Produto(2,"capinha");
+
+
+console.log(P1);
+P1.nome = "Carregador iphone";
+console.log(P1);
+console.log(P2);
+P2.ativo= false;
+console.log(P2);
+console.log("Nome Produto: " + P2.nome +"  status: " + P2.ativo);
