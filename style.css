@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #151a2e;
+    background: #fff;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================
+   HEADER / NAVEGAÇÃO
+========================= */
+
+header {
+    width: 100%;
+    padding: 30px 5%;
+    margin-bottom: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    color: #115f3f;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 8px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botaoL,
+.botaoE {
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.botaoL {
+    width: 160px;
+    min-height: 45px;
+    padding: 8px 20px;
+    background: #b0ce78;
+    border: 2px solid #10121a;
+    color: #151a2e;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.botaoE {
+    width: 180px;
+    min-height: 44px;
+    padding: 8px 20px;
+    background: #3db364;
+    border: 2px solid #10121a;
+    color: #10121a;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.botaoL:hover,
+.botaoE:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botaoL:active,
+.botaoE:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+main {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* =========================
+   SEÇÃO PRINCIPAL
+========================= */
+
+.logo {
+    width: min(40%, 430px);
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.texto {
+    width: 45%;
+    max-width: 550px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.titulo {
+    font-size: clamp(32px, 5vw, 50px);
+    font-weight: 800;
+    line-height: 1.15;
+    color: #335a3f;
+    margin-bottom: 15px;
+}
+
+.sub-titulo {
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 500;
+    line-height: 1.4;
+    color: #515151;
+    margin-bottom: 20px;
+}
+
+.paragrafo {
+    max-width: 500px;
+    margin: 20px 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #6f6565;
+    text-align: justify;
+}
+
+
+/* =========================
+   IMAGEM PRINCIPAL
+========================= */
+
+.img-dog {
+    width: 70%;
+    max-width: 900px;
+    height: 450px;
+    object-fit: cover;
+    margin: 80px auto 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.servicos {
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.h2-servicos {
+    margin-bottom: 40px;
+    font-size: clamp(28px, 4vw, 40px);
+    color: #335a3f;
+}
+
+.preco {
+    font-size: 24px;
+    font-weight: 700;
+    color: #138153;
+}
+
+.lista-servicos {
+    width: 240px;
+    min-height: 180px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    margin: 10px;
+    padding: 25px 20px;
+    color: #462c20;
+    background: #fff;
+    border: 2px solid #462c20;
+    border-radius: 15px;
+    list-style: none;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.lista-servicos:hover {
+    transform: translateY(-6px);
+    border-color: #3db364;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   IMAGENS DOS CARDS
+========================= */
+
+.img-card {
+    width: 70%;
+    max-width: 200px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+    margin-top: 100px;
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #555;
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        margin-bottom: 70px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .texto {
+        width: 50%;
+        margin-left: 3%;
+    }
+
+    .img-dog {
+        width: 85%;
+        height: 350px;
+    }
+
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 25px 20px;
+        margin-bottom: 60px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+
+    .botaoL {
+        width: 120px;
+        min-height: 38px;
+        font-size: 16px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .logo {
+        width: 70%;
+        max-width: 350px;
+        margin: 0 auto 40px;
+    }
+
+    .texto {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 32px;
+    }
+
+    .sub-titulo {
+        font-size: 22px;
+    }
+
+    .paragrafo {
+        margin: 20px auto 30px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .botaoE {
+        width: 160px;
+        font-size: 17px;
+    }
+
+    .img-dog {
+        width: 100%;
+        height: 250px;
+        margin-top: 60px;
+        border-radius: 12px;
+    }
+
+    .servicos {
+        margin-top: 70px;
+    }
+
+    .lista-servicos {
+        width: min(100%, 300px);
+        margin: 10px auto;
+        display: flex;
+    }
+
+    footer {
+        margin-top: 70px;
+        padding: 40px 20px;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .sub-titulo {
+        font-size: 20px;
+    }
+
+    .paragrafo {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .img-dog {
+        height: 210px;
+    }
+
+    .lista-servicos {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+/* =========================
+   PÁGINA DE SERVIÇOS
+========================= */
+
+.servicos {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.lista-servicos {
+    width: 280px;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 25px 20px;
+
+    background: #fff;
+    color: #462c20;
+
+    border: 2px solid #462c20;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.lista-servicos:hover {
+    transform: translateY(-8px);
+
+    border-color: #3db364;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.lista-servicos .img-card {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+.lista-servicos h2 {
+    margin-bottom: 10px;
+
+    color: #335a3f;
+
+    font-size: 25px;
+}
+
+.lista-servicos p {
+    margin-bottom: 20px;
+
+    color: #6f6565;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+.lista-servicos .preco {
+    margin-top: auto;
+    margin-bottom: 20px;
+
+    color: #138153;
+
+    font-size: 20px;
+}
+
+.lista-servicos .botaoE {
+    width: 150px;
+}
+
+
+/* =========================
+   SERVIÇOS - CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .servicos {
+        width: 90%;
+    }
+
+    .servicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista-servicos {
+        width: min(100%, 350px);
+    }
+
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 480px) {
+
+    .lista-servicos {
+        width: 100%;
+    }
+
+    .lista-servicos .img-card {
+        height: 160px;
+    }
+
+}
